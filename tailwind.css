@@ -1,0 +1,14 @@
+@tailwind base;
+body {
+  font-family: Google Sans;
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+@responsive {
+  .-translate-100 {
+    transform: translate(-100%);
+  }
+}

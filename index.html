@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Tailwind.run Export | Z6jiBB / 1</title>
+  <link rel="stylesheet" href="tailwind.out.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/dar3rqz.css" />
+  <style>
+    .font-brush {
+      font-family: brush-script-std, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .bg-inherit {
+      background-color: inherit;
+    }
+
+    *::-webkit-scrollbar {
+      display: none;
+    }
+
+    .shadow-primary {
+      box-shadow: -3px 7px 14px 1px #ff4a8745;
+    }
+
+    .min-h-sm {
+      min-height: 9.1rem;
+    }
+    .rotate-180{
+      transform: rotate(180deg);
+    }
+    .min-w-30{
+      min-width: 30rem;
+    }
+    .min-w-20{
+      min-width: 20rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <body class="min-h-screen flex antialiased text-gray-800 select-none" id="app">
+    <nav class="w-24 h-screen bg-white py-10 relative flex flex-col">
+      <button
+        class="absolute bg-primary shadow-primary text-white text-xl bg-pink-600 rounded-r-lg z-10 px-6 py-3 font-brush">
+        Teamatic
+      </button>
+      <div class="w-full items-center flex flex-col justify-between h-full">
+        <div class="flex flex-col flex-1 justify-center">
+          <span class="my-5 fill-current text-purple-500">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="feather feather-home">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              <path d="M9 22V12h6v10" />
+            </svg>
+          </span>
+          <span class="my-5 fill-current">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="feather feather-user">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </span>
+          <span class="my-5 fill-current">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="feather feather-file-text">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+              <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
+            </svg>
+          </span>
+          <span class="my-5 fill-current">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="feather feather-pie-chart">
+              <path d="M21.21 15.89A10 10 0 118 2.83M22 12A10 10 0 0012 2v10z" />
+            </svg>
+          </span>
+          <span class="my-5 fill-current">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="feather feather-settings">
+              <circle cx="12" cy="12" r="3" />
+              <path
+                d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
+            </svg>
+          </span>
+        </div>
+        <div>
+          <span class="mt-auto">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" class="rotate-180">
+              <path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9" />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <!-- Center -->
+    <div
+      class="flex-1 h-screen bg-gray-100 rounded-tl-big rounded-bl-big p-2 sm:px-10 py-8 py-shadow border-l border-gray-200 overflow-scroll relative">
+      <header class="md:sticky flex top-0 bg-inherit overflow-scroll">
+        <div class="p-4">
+          <h2 class="text-lg font-bold">Daily Read</h2>
+          <div class="min-w-30 bg-white p-5 px-10 shadow-blue rounded-large mt-8 flex items-center flex-shrink-0 flex-grow-0">
+            <div class="flex-1">
+              <h1 class="text-2xl font-bold mb-8 text-gray-700">
+                Are deadlines a<br />
+                real key success <br />indicator?
+              </h1>
+              <button class="px-10 py-2 font-semibold rounded-lg bg-blue-800 text-white text-lg">
+                Read
+              </button>
+            </div>
+            <div class="ml-5 ">
+              <img class="h-48" alt="whatever"
+                src="https://res.cloudinary.com/realmicrosystems/image/upload/v1579113437/3-godaddy-award-winning-support-b-235x_mmub5u.webp" />
+            </div>
+          </div>
+        </div>
+        <div class="p-4 min-w-20">
+          <div class="text-lg flex justify-between">
+            <h1 class="font-bold">Delivery Plan</h1>
+            <button class="flex items-center text-gray-600 text-sm font-semibold">
+              Week
+              <span class="ml-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="min-w-20 bg-white shadow-blue rounded-large mt-8 flex overflow-hidden flex-col items-center">
+            <div class="h-40"></div>
+            <div class="flex p-5 bg-white w-full justify-between font-semibold text-gray-600 border-t text-sm">
+              <span>Mon</span>
+              <span>Tue</span>
+              <span>Web</span>
+              <span class="text-primary">Thu</span>
+              <span>Fri</span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- HEADER START -->
+      <div class="w-full flex justify-between py-8">
+        <span class="font-bold text-lg">Mobile Application Project</span>
+        <span>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z"
+              stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z"
+              stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </span>
+      </div>
+      <!-- HEADER END -->
+
+      <!-- ROW 1 START-->
+      <div class="mb-5">
+        <div class="flex items-center pb-4">
+          <img
+            src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2.25&amp;w=144&amp;h=144&amp;q=80"
+            class="rounded-full h-10 w-10 bg-pink-200 mr-2" />
+          <span class="mr-3 font-bold">Shakirah
+            <span class="text-gray-600">&nbsp; iOS development</span></span>
+
+          <span class="text-gray-700 ml-auto">70% Progress</span>
+        </div>
+        <div class="flex -mx-2 flex-wrap">
+          <div class="w-full min-w-20 p-2 sm:w-1/2 lg:w-1/3">
+            <div class="p-5 shadow-blue bg-white rounded-lg min-h-sm flex justify-around flex-col flex-shrink-0">
+              <!-- top  -->
+              <div class="flex justify-between">
+                <div class="text-lg font-bold">
+                  Create a new<br />
+                  database for project A
+                </div>
+                <!-- circle -->
+                <svg class="stroke-current text-purple-400" width="24" height="24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <!-- circle -->
+              </div>
+
+              <!-- Bottom -->
+              <div class="flex justify-between items-center mt-5">
+                <button class="p-1 px-5 bg-purple-200 text-sm text-purple-400 font-bold rounded-lg">
+                  In Progress
+                </button>
+                65%
+              </div>
+            </div>
+          </div>
+          <div class="w-full p-2 sm:w-1/2 lg:w-1/3">
+            <div class=" p-5 shadow-blue bg-white rounded-lg min-h-sm flex justify-around flex-col flex-shrink-0">
+              <!-- top  -->
+              <div class="flex justify-between">
+                <div class="text-lg font-bold">
+                  Implement<br />
+                  settings screen
+                </div>
+                <!-- circle -->
+                <svg class="stroke-current text-pink-400" width="24" height="24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path stroke-width="2" d="M10.293 14.293l7-7M7.273 10.652l4.096 4.127" />
+                </svg>
+                <!-- circle -->
+              </div>
+
+              <!-- Bottom -->
+              <div class="flex justify-between items-center mt-5">
+                <button class="p-1 px-5 bg-pink-200 text-sm font-bold text-primary rounded-lg">
+                  Done
+                </button>
+                100%
+              </div>
+            </div>
+          </div>
+          <div class="w-full p-2 sm:w-1/2 lg:w-1/3">
+            <div class="p-5 shadow-blue bg-white rounded-lg min-h-sm flex justify-around flex-col flex-shrink-0 ">
+              <!-- top  -->
+              <div class="flex justify-between">
+                <div class="text-lg font-bold">
+                  Create a new<br />
+                  database for project A
+                </div>
+                <!-- circle -->
+                <svg class="stroke-current text-pink-400" width="24" height="24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path stroke-width="2" d="M10.293 14.293l7-7M7.273 10.652l4.096 4.127" />
+                </svg>
+                <!-- circle -->
+              </div>
+
+              <!-- Bottom -->
+              <div class="flex justify-between items-center mt-5">
+                <button class="p-1 px-5 bg-pink-200 text-sm font-bold text-primary rounded-lg">
+                  Done
+                </button>
+                100%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ROW 1 END -->
+
+      <!-- ROW 2 START -->
+      <div class="mb-5">
+        <div class="flex items-center pb-4">
+          <img
+            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2.25&amp;w=144&amp;h=144&amp;q=80"
+            class="rounded-full h-10 w-10 bg-pink-200 mr-2" />
+          <span class="mr-3 font-bold">Jessica
+            <span class="text-gray-600">&nbsp; UI/UX Design</span></span>
+
+          <span class="text-gray-700 ml-auto">70% Progress</span>
+        </div>
+        <!-- Heading -->
+        <!-- COnatiner -->
+        <div class="flex -mx-2 flex-wrap">
+          <div class="w-full p-2 sm:w-1/2 lg:w-1/3">
+            <div class="p-5 shadow-blue bg-white rounded-lg min-h-sm flex justify-around flex-col">
+              <!-- top  -->
+              <div class="flex justify-between">
+                <div class="text-lg font-bold">
+                  Setup and <br />
+                  migrate design system
+                </div>
+                <!-- circle -->
+                <svg class="stroke-current text-purple-400" width="24" height="24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <!-- circle -->
+              </div>
+
+              <!-- Bottom -->
+              <div class="flex justify-between items-center mt-5">
+                <button class="p-1 px-5 bg-purple-200 text-sm text-purple-400 font-bold rounded-lg">
+                  In Progress
+                </button>
+                0%
+              </div>
+            </div>
+          </div>
+          <div class="w-full p-2  sm:w-1/2 lg:w-1/3">
+            <div class="p-5 shadow-blue bg-white rounded-lg min-h-sm flex justify-around flex-col">
+              <!-- top  -->
+              <div class="flex justify-between">
+                <div class="text-lg font-bold">
+                  Create app mobile<br />
+                  icons till wed
+                </div>
+                <!-- circle -->
+                <svg class="stroke-current text-pink-400" width="24" height="24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path stroke-width="2" d="M10.293 14.293l7-7M7.273 10.652l4.096 4.127" />
+                </svg>
+                <!-- circle -->
+              </div>
+
+              <!-- Bottom -->
+              <div class="flex justify-between items-center mt-5">
+                <button class="p-1 px-5 bg-pink-200 text-sm font-bold text-primary rounded-lg">
+                  Done
+                </button>
+                100%
+              </div>
+            </div>
+          </div>
+          <div class="w-full p-2 sm:w-1/2 lg:w-1/3 ">
+            <div class="p-5 shadow-blue bg-white rounded-lg min-h-sm flex justify-around flex-col">
+              <!-- top  -->
+              <div class="flex justify-between">
+                <div class="text-lg font-bold">Share a Protoype<br /></div>
+                <!-- circle -->
+                <svg class="stroke-current text-pink-400" width="24" height="24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path stroke-width="2" d="M10.293 14.293l7-7M7.273 10.652l4.096 4.127" />
+                </svg>
+                <!-- circle -->
+              </div>
+
+              <!-- Bottom -->
+              <div class="flex justify-between items-center mt-5 w-full">
+                <button class="p-1 px-5 bg-purple-200 text-sm text-purple-400 font-bold rounded-lg">
+                  In Progress
+                </button>
+                42%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ROW 2 END -->
+    </div>
+    <div
+      :class="sidebarOpen ? 'translate-x-0 ease-out transition-medium' : '-translate-x-full ease-in transition-medium'"
+      class="bg-white h-screen rounded-tb-big p-8 pt-10 min-w-0 hidden md:block md:w-2/7 shadow overflow-scroll">
+      <header class="font-bold flex justify-between items-center sticky top-0 bg-white">
+        <div>My Profile</div>
+        <div class="flex items-center">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16 3H6C3.23858 3 1 5.23858 1 8V18C1 20.7614 3.23858 23 6 23H16C18.7614 23 21 20.7614 21 18V8C21 5.23858 18.7614 3 16 3Z"
+              stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M22.9567 4.41327C23.0802 5.24552 22.938 6.09549 22.5505 6.84229C22.163 7.58908 21.5499 8.19468 20.7984 8.57294C20.0468 8.9512 19.1952 9.08287 18.3645 8.9492C17.5339 8.81554 16.7665 8.42335 16.1716 7.82843C15.5767 7.23351 15.1845 6.46614 15.0508 5.63548C14.9171 4.80482 15.0488 3.95316 15.4271 3.20164C15.8053 2.45012 16.4109 1.83701 17.1577 1.44951C17.9045 1.06201 18.7545 0.919859 19.5867 1.04327C20.4357 1.16915 21.2216 1.56473 21.8284 2.17158C22.4353 2.77842 22.8309 3.56435 22.9567 4.41327Z"
+              fill="#FE346E" fill-opacity="0.97" stroke="white" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <img
+            src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=144&amp;h=144&amp;q=80"
+            class="h-10 w-10 rounded-lg ml-5 shadow" />
+        </div>
+      </header>
+      <div class="flex justify-between px-1 items-center py-8 text-sm font-semibold text-gray-700">
+        Projects
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 1V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M1 8H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+      <!-- Content -->
+      <div>
+        <div>
+          <!-- 1 -->
+          <div class="bg-orange-100 border border-orange-200 rounded-lg p-5 mb-5">
+            <div class="flex justify-between">
+              <div class="font-bold text-blue-900 flex items-center">
+                <div class="h-3 w-3 rounded bg-orange-500 mr-2"></div>
+                Mobile Cients
+              </div>
+              <span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z"
+                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z"
+                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            <div class="mt-5 flex items-center ">
+              <img class="h-8 w-8 bg-black rounded-full mr-2"
+                src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=144&amp;h=144&amp;q=80" />
+              <span>Clare</span>
+              <span class="ml-auto text-orange-500 text-sm font-semibold">59/72 done</span>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="bg-green-100 border border-green-200 rounded-lg p-5 mb-5">
+            <div class="flex justify-between">
+              <div class="font-bold text-blue-900 flex items-center">
+                <div class="h-3 w-3 rounded bg-green-500 mr-2"></div>
+                Backend API
+              </div>
+              <span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z"
+                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z"
+                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            <div class="mt-5 flex items-center ">
+              <img class="h-8 w-8 bg-black rounded-full mr-2"
+                src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80" />
+              <span>Jessica</span>
+              <span class="ml-auto text-green-500 text-sm font-semibold">19/19 done</span>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="bg-yellow-100 border border-orange-200 rounded-lg p-5 mb-5">
+            <div class="flex justify-between">
+              <div class="font-bold text-blue-900 flex items-center">
+                <div class="h-3 w-3 rounded bg-orange-500 mr-2"></div>
+                Admin Panel
+              </div>
+              <span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z"
+                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z"
+                    stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+            <div class="mt-5 flex items-center ">
+              <img class="h-8 w-8 bg-black rounded-full mr-2"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80" />
+              <span>Chistopher</span>
+              <span class="ml-auto text-orange-500 text-sm font-semibold">99/108 done</span>
+            </div>
+          </div>
+
+          <!-- Chat -->
+          <div>
+            <header class="flex justify-between py-5">
+              <span class="font-bold">Mobile Team Chat</span>
+              <div class="flex items-center">
+                <!-- overlapping images -->
+                <div class="mt-1 flex items-center sm:mt-0 sm:mx-6">
+                  <span class="rounded-full border-2 border-white"><img alt=""
+                      src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=144&amp;h=144&amp;q=80"
+                      class="h-6 w-6 rounded-full object-cover" /></span>
+                  <span class="-ml-2 rounded-full border-2 border-white"><img alt=""
+                      src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2.25&amp;w=144&amp;h=144&amp;q=80"
+                      class="h-6 w-6 rounded-full object-cover" /></span>
+                  <span class="-ml-2 rounded-full border-2 border-white"><img alt=""
+                      src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2.25&amp;w=144&amp;h=144&amp;q=80"
+                      class="h-6 w-6 rounded-full object-cover" /></span>
+                  <span class="-ml-2 rounded-full border-2 border-white"><img alt=""
+                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2.25&amp;w=144&amp;h=144&amp;q=80"
+                      class="h-6 w-6 rounded-full object-cover" /></span>
+                </div>
+                <!-- Icon -->
+                <span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z"
+                      stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </div>
+            </header>
+            <!-- chat screen -->
+            <div class="bg-blue-100 shadow p-4 rounded relative">
+              <!-- row -->
+              <div class="pb-10">
+                <div class="flex py-2">
+                  <img
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                    class="h-8 w-8 bg-black rounded-full mr-2 flex-shrink-0 mx-2" />
+                  <div class="p-2 rounded-lg bg-white shadow rounded-tl-none text-sm ">
+                    Guys, could you send me the latest build pls?
+                  </div>
+                  <span class="no-wrap text-xs flex-shrink-0 mt-2 text-gray-600 mx-2">11:13 PM</span>
+                </div>
+
+                <div class="flex py-2 flex-row-reverse">
+                  <img
+                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=144&h=144&q=80"
+                    class="h-8 w-8 bg-black rounded-full mr-2 flex-shrink-0 mx-2" />
+
+                  <div class="p-2 rounded-lg bg-white shadow rounded-tl-none text-sm">
+                    Here you go,Cowboy 🤠
+                  </div>
+                  <span class="no-wrap text-xs flex-shrink-0 mt-2 text-gray-600 mx-2">6:13 AM</span>
+                </div>
+                <div class="flex justify-end text-sm text-purple-700 items-center py-4 underline">
+                  <span class="ml-1">
+                    <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M21.44 11.05L12.25 20.24C11.1242 21.3658 9.59723 21.9983 8.00505 21.9983C6.41286 21.9983 4.88589 21.3658 3.76005 20.24C2.6342 19.1141 2.00171 17.5872 2.00171 15.995C2.00171 14.4028 2.6342 12.8758 3.76005 11.75L12.95 2.55998C13.7006 1.80942 14.7186 1.38776 15.78 1.38776C16.8415 1.38776 17.8595 1.80942 18.61 2.55998C19.3606 3.31054 19.7823 4.32852 19.7823 5.38998C19.7823 6.45144 19.3606 7.46942 18.61 8.21998L9.41005 17.41C9.03476 17.7853 8.52577 17.9961 7.99505 17.9961C7.46432 17.9961 6.95533 17.7853 6.58005 17.41C6.20476 17.0347 5.99393 16.5257 5.99393 15.995C5.99393 15.4643 6.20476 14.9553 6.58005 14.58L15.07 6.09998"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>
+                  Awardwinning.apk
+                </div>
+              </div>
+              <!-- Message  area -->
+              <div class="absolute flex items-center bottom-0 left-0 rounded-large shadow-blue bg-white w-full">
+                <span class="ml-1 fill-current text-purple-700 ml-5">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M21.44 11.05L12.25 20.24C11.1242 21.3658 9.59723 21.9983 8.00505 21.9983C6.41286 21.9983 4.88589 21.3658 3.76005 20.24C2.6342 19.1141 2.00171 17.5872 2.00171 15.995C2.00171 14.4028 2.6342 12.8758 3.76005 11.75L12.95 2.55998C13.7006 1.80942 14.7186 1.38776 15.78 1.38776C16.8415 1.38776 17.8595 1.80942 18.61 2.55998C19.3606 3.31054 19.7823 4.32852 19.7823 5.38998C19.7823 6.45144 19.3606 7.46942 18.61 8.21998L9.41005 17.41C9.03476 17.7853 8.52577 17.9961 7.99505 17.9961C7.46432 17.9961 6.95533 17.7853 6.58005 17.41C6.20476 17.0347 5.99393 16.5257 5.99393 15.995C5.99393 15.4643 6.20476 14.9553 6.58005 14.58L15.07 6.09998"
+                      stroke="purple" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+                <input class="flex-1 mx-5" placeholder="Type a message here " />
+                <button class="p-4 bg-purple-600 rounded-lg">
+                  <svg class="stroke-current text-white" width="22" height="22" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 1L10 12M21 1l-7 20-4-9-9-4 20-7z" stroke-width="2" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chat end -->
+        </div>
+      </div>
+    </div>
+  </body>
+</body>
+<script src="https://unpkg.com/vue@^2.6/dist/vue.min.js"></script>
+<script>
+  new Vue({
+    el: "#app",
+    data: {
+      sidebarOpen: false
+    }
+  });
+</script>
+
+</html>
