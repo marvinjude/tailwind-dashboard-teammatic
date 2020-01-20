@@ -18,7 +18,7 @@
 @font-face {
   font-family: "Google Sans";
   src: local("Google Sans Italic"), local("GoogleSans-Italic"),
-    url("./fonts/GoogleSans-Italic.woff2") format("woff2");
+    url("./fonts/Google-Sans/GoogleSans-Italic.woff2") format("woff2");
   font-weight: normal;
   font-style: italic;
 }
@@ -26,7 +26,7 @@
 @font-face {
   font-family: "Google Sans";
   src: local("Google Sans Regular"), local("GoogleSans-Regular"),
-    url("../fonts/GoogleSans-Regular.woff2") format("woff2");
+    url("./fonts/Google-Sans/GoogleSans-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -34,7 +34,7 @@
 @font-face {
   font-family: "Google Sans";
   src: local("Google Sans Medium"), local("GoogleSans-Medium"),
-    url("./fonts/GoogleSans-Medium.woff2") format("woff2");
+    url("./fonts/Google-Sans/GoogleSans-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
@@ -42,7 +42,7 @@
 @font-face {
   font-family: "Google Sans";
   src: local("Google Sans Bold Italic"), local("GoogleSans-BoldItalic"),
-    url("./fonts/GoogleSans-BoldItalic.woff2") format("woff2");
+    url("./fonts/Google-Sans/GoogleSans-BoldItalic.woff2") format("woff2");
   font-weight: bold;
   font-style: italic;
 }
